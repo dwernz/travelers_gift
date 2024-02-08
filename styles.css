@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    margin: 15px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 35px;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+.amazon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #222222;
+    margin: 40px auto;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.amazon-link:hover {
+    background-color: #444;
+}
+
+.scroll-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.scroll {
+    padding: 35px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+    background: #fffef0;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    margin: 25px 0px;
+}
+
+.scroll:hover {
+    filter: brightness(80%);
+}
+
+.scroll a {
+    text-decoration: none;
+    color: black;
+    font-family: Diphylleia;
+    font-weight: bold;
+}
+
+.parchment {
+    box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+    background: #fffef0;
+    margin: 2em 1em;
+    padding: 4.5em;
+    font-family: Diphylleia;
+    border-radius: 5px;
+}
+
+.parchment h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.parchment p {
+    font-size: 18px;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px;
+    width: 100%;
+}
+
+.nav-btn {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: sans-serif;
+}
+
+.nav-btn:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+    color: #022a6b;
+}
+
+.text-list {
+    list-style-type: none;
+}
+
+@media (max-width: 768px) {
+    .scroll {
+        width: 80%;
+    }
+
+    .parchment {
+        padding: 3.5em;
+    }
+
+    .parchment p {
+        font-size: 20px;
+    }
+
+    .amazon-link {
+        width: 80%;
+    }
+}
